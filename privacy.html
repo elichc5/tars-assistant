@@ -18,17 +18,21 @@
   No se ofrece a terceros y no recoge datos de otras personas.</p>
 
   <h2>Qué datos de Google se usan</h2>
-  <p>La aplicación pide acceso a una sola cuenta de Gmail, la del propio asistente, con dos
+  <p>La aplicación pide acceso a una sola cuenta de Google, la del propio asistente, con tres
   permisos:</p>
   <ul>
     <li><strong>Leer el correo</strong> de ese buzón (<code>gmail.readonly</code>).</li>
     <li><strong>Enviar correo</strong> desde ese buzón (<code>gmail.send</code>).</li>
+    <li><strong>Ver y editar el calendario</strong> de esa cuenta (<code>calendar</code>), para
+    crear eventos y recordatorios e invitar a otras personas.</li>
   </ul>
   <p>También recibe la dirección de correo de la cuenta para identificarla. No se accede a
-  contactos, calendario, archivos ni a ninguna otra cuenta.</p>
+  contactos, archivos ni a ninguna otra cuenta.</p>
 
   <h2>Para qué se usan</h2>
-  <p>Solo para que el asistente lea y envíe correo cuando su dueño se lo pide. Los datos no se
+  <p>Solo para que el asistente lea y envíe correo y gestione su calendario cuando su dueño se
+  lo pide. Las direcciones de las personas invitadas a un evento se usan únicamente para enviar
+  esa invitación. Los datos no se
   venden, no se usan para publicidad y no se comparten con terceros con otros fines.</p>
 
   <h2>Dónde se procesan y guardan</h2>
@@ -37,13 +41,14 @@
     de acceso se guardan cifradas en ese servidor.</li>
     <li>Para redactar sus respuestas, el asistente envía el contenido necesario a un proveedor de
     modelos de IA (la API de Gemini de Google). Ese envío se hace solo para generar la respuesta.</li>
-    <li>No se guardan copias del correo fuera de ese servidor y del propio buzón de Gmail.</li>
+    <li>No se guardan copias del correo ni del calendario fuera de ese servidor y de la propia
+    cuenta de Google.</li>
   </ul>
 
   <h2>Cómo retirar el acceso</h2>
   <p>El acceso se puede revocar en cualquier momento desde la cuenta de Google, en
   <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Al
-  revocarlo, la aplicación deja de poder leer o enviar correo de inmediato.</p>
+  revocarlo, la aplicación deja de poder leer o enviar correo y usar el calendario de inmediato.</p>
 
   <h2>Contacto</h2>
   <p>Para cualquier consulta sobre esta política, abre un <em>issue</em> en el
@@ -51,9 +56,10 @@
 
   <hr>
   <p class="en"><strong>English summary.</strong> TARS Assistant is a private, single-user
-  project. It requests access to one Gmail account, its own, to read mail
-  (<code>gmail.readonly</code>) and send mail (<code>gmail.send</code>), plus the account's email
-  address. The data is used only to let the assistant read and send email at its owner's request.
+  project. It requests access to one Google account, its own, to read mail
+  (<code>gmail.readonly</code>), send mail (<code>gmail.send</code>) and view and edit that
+  account's calendar (<code>calendar</code>), plus the account's email address. The data is used
+  only to let the assistant read and send email and manage its calendar at its owner's request.
   It is not sold, not used for advertising and not shared for any other purpose. The assistant
   runs on a private server controlled by its owner; content needed to produce a reply is sent to
   an AI model provider (Google's Gemini API) for that purpose only. Access can be revoked at any
